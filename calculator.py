@@ -4,7 +4,7 @@ import math
 
 # Create the main application window
 root = tk.Tk()
-root.title("Advanced Calculator")
+root.title("Ernest's Calculator")
 root.geometry("400x600")
 
 # Memory storage
@@ -29,7 +29,7 @@ def calculate():
         display.delete(0, tk.END)
         display.insert(0, result)
     except:
-        messagebox.showerror("Error", "Invalid Input")
+        messagebox.showerror("Error", "What are you typing")
 
 def backspace():
     current_text = display.get()
